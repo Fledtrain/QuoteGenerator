@@ -13,11 +13,11 @@
     <nav>
       <div class="quote-box">
         <h2>Quote of the day</h2>
-        <blockquote>Loading...</blockquote>
-        <span>Loading...</span>
+        <blockquote id="quote">Loading...</blockquote>
+        <span id="author">Loading...</span>
         <div>
-          <button>New Quote</button>
-          <button>
+          <button onclick="getQuote(api)" id="new-quote-btn">New Quote</button>
+          <button onclick="Tweet()">
             <img src="/assets/twitter-logo.png" alt="Twitter Logo" /> Tweet
           </button>
         </div>
