@@ -52,7 +52,8 @@ body {
 
 .quote-box blockquote {
   font-size: 26px;
-  min-height: 100px;
+  min-height: auto;
+  padding-bottom: 10px;
 }
 .quote-box blockquote::before,
 .quote-box blockquote::after {
