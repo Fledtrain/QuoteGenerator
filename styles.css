@@ -11,9 +11,18 @@ body {
   background: #adb9f7;
 }
 
+/* Quote boxes */
+
+
+.quote-box-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .quote-box {
   background: #faf9f6;
-  width: 700px;
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -26,7 +35,7 @@ body {
 
 .quote-box h2 {
   font-size: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   position: relative;
 }
 .quote-box h2::after {
@@ -43,7 +52,7 @@ body {
 
 .quote-box blockquote {
   font-size: 26px;
-  min-height: 110px;
+  min-height: 100px;
 }
 .quote-box blockquote::before,
 .quote-box blockquote::after {
@@ -95,4 +104,45 @@ body {
 .quote-box button:nth-child(2){
     background: transparent;
     color:  #333;
+}
+
+/* Media queries */
+
+/* Small Tablets */
+@media(max-width:500px){
+  .quote-box{
+    width: 70%;
+  }
+  #quote{
+    font-size: 24px;
+  }
+  .quote-box h2{
+    font-size: 32px;
+  }
+  #new-quote-btn{
+    width: 125px;
+  }
+  #new-twitter-btn{
+    width: 125px;
+  }
+}
+
+/* Phones */
+@media(max-width:320px){
+  .quote-box{
+    width: 90%;
+    padding: 20px;
+  }
+  .quote-box h2{
+    font-size: 20px;
+  }
+  #quote{
+    font-size: 16px;
+  }
+  #author{
+    font-size: 14px;
+  }
+  #new-quote-btn{
+    font-size: 10px;
+  }
 }
