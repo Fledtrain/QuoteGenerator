@@ -21,7 +21,7 @@ const Tweet = () => {
   window.open(
     "https://twitter.com/intent/tweet?text=" +
       quote.innerHTML +
-      "--" +
+      "  By: " +
       author.innerHTML,
     "width=300",
     "height=600"
