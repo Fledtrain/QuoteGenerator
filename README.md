@@ -1,10 +1,10 @@
 # QuoteGenerator
 Random Quote Generator 
 
-## Work in Progress Features
+## Features
 
 - Generate Random Quotes 
-- Send the quotes to twitter to tweet out
+- Send the quotes to your twitter 
 
 
 
