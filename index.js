@@ -1,8 +1,9 @@
 window.onload = () => {
-  const quote = document.getElementById("quote");
-  const author = document.getElementById("author");
-  const api = "https://api.quotable.io/random";
+  const quote = document.getElementById("quote"); // Quote itself
+  const author = document.getElementById("author"); // Author of the quote
+  const api = "https://api.quotable.io/random"; // Quote API
 
+  // Get Quote
   const getQuote = async (url) => {
     const response = await fetch(url);
     const data = await response.json();
@@ -11,6 +12,8 @@ window.onload = () => {
   };
 
   getQuote(api);
+
+  // Grab new Quote button
   const newQuoteBtn = document.querySelector("#new-quote-btn");
   newQuoteBtn.addEventListener("click", () => {
     getQuote(api);
