@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
 
 * {
   margin: 0;
@@ -13,11 +13,10 @@ body {
 
 /* Quote boxes */
 
-
-.quote-box-outer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.quote-box-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .quote-box {
@@ -33,12 +32,12 @@ body {
   box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.quote-box h2 {
+.quote-box h1 {
   font-size: 35px;
   margin-bottom: 36px;
   position: relative;
 }
-.quote-box h2::after {
+.quote-box h1::after {
   content: "";
   width: 100px;
   height: 3.5px;
@@ -93,57 +92,69 @@ body {
   border-radius: 25px;
   border: 1px solid #a8d3fb;
   background: #9ed0ff;
-  color: #ffffff;
+  color: #000000;
   width: 150px;
   height: 50px;
 }
 
-.quote-box button img{
-    width: 20px;
-    margin-right: 10px;
+.quote-box button img {
+  width: 20px;
+  margin-right: 10px;
 }
-.quote-box button:nth-child(2){
-    background: transparent;
-    color:  #333;
+.quote-box button:nth-child(2) {
+  background: transparent;
+  color: #333;
 }
 
 /* Media queries */
 
 /* Small Tablets */
-@media(max-width:500px){
-  .quote-box{
+@media (max-width: 500px) {
+  .quote-box {
     width: 70%;
+    padding: 35px;
   }
-  #quote{
+  #quote {
     font-size: 24px;
   }
-  .quote-box h2{
+  .quote-box h1 {
     font-size: 32px;
   }
-  #new-quote-btn{
-    width: 125px;
+  #new-quote-btn {
+    width: 395px;
   }
-  #new-twitter-btn{
-    width: 125px;
+  #new-twitter-btn {
+    width: 395px;
+  }
+}
+@media (max-width: 400px) {
+  .quote-box {
+    padding: 30px;
+  }
+  #new-quote-btn {
+    font-size: 12px;
+  }
+  #new-twitter-btn {
+    font-size: 12px;
   }
 }
 
 /* Phones */
-@media(max-width:320px){
-  .quote-box{
+@media (max-width: 320px) {
+  .quote-box {
     width: 90%;
     padding: 20px;
   }
-  .quote-box h2{
+  .quote-box h1 {
     font-size: 20px;
   }
-  #quote{
+  #quote {
     font-size: 16px;
   }
-  #author{
+  #author {
     font-size: 14px;
   }
-  #new-quote-btn{
+  #new-quote-btn {
     font-size: 10px;
   }
 }
